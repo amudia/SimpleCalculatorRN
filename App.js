@@ -57,7 +57,7 @@ export default class App extends Component {
     };
   }
 
-  add = () => {
+  addition = () => {
     if (this.state.checked1 && this.state.checked2 && this.state.checked3) {
       if (this.state.input1 && this.state.input2 && this.state.input3) {
         this.setState({
@@ -105,7 +105,7 @@ export default class App extends Component {
     }
   };
 
-  min = () => {
+  subtraction = () => {
     if (this.state.checked1 && this.state.checked2 && this.state.checked3) {
       if (this.state.input1 && this.state.input2 && this.state.input3) {
         this.setState({
@@ -153,7 +153,7 @@ export default class App extends Component {
     }
   };
 
-  multiply = () => {
+  multiplication = () => {
     if (this.state.checked1 && this.state.checked2 && this.state.checked3) {
       if (this.state.input1 && this.state.input2 && this.state.input3) {
         this.setState({
@@ -201,7 +201,7 @@ export default class App extends Component {
     }
   };
 
-  divide = () => {
+  division = () => {
     if (this.state.checked1 && this.state.checked2 && this.state.checked3) {
       if (this.state.input1 && this.state.input2 && this.state.input3) {
         this.setState({
@@ -319,16 +319,19 @@ export default class App extends Component {
           </View>
         </View>
         <View style={styles.wrapbtn}>
-          <Button mode="outlined" onPress={this.add} style={styles.btn}>
+          <Button mode="outlined" onPress={this.addition} style={styles.btn}>
             +
           </Button>
-          <Button mode="outlined" onPress={this.min} style={styles.btn}>
+          <Button mode="outlined" onPress={this.subtraction} style={styles.btn}>
             -
           </Button>
-          <Button mode="outlined" onPress={this.multiply} style={styles.btn}>
+          <Button
+            mode="outlined"
+            onPress={this.multiplication}
+            style={styles.btn}>
             x
           </Button>
-          <Button mode="outlined" onPress={this.divide} style={styles.btn}>
+          <Button mode="outlined" onPress={this.division} style={styles.btn}>
             /
           </Button>
         </View>
