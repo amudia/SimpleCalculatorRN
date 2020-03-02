@@ -65,7 +65,7 @@ export default class App extends Component {
         });
       } else {
         this.setState({
-          result: 'Please check 2 or more checklist!',
+          result: 'Please Input Value!',
         });
       }
     } else if (this.state.checked1 && this.state.checked2) {
@@ -113,7 +113,7 @@ export default class App extends Component {
         });
       } else {
         this.setState({
-          result: 'Please check 2 or more checklist!',
+          result: 'Please Input Value!',
         });
       }
     } else if (this.state.checked1 && this.state.checked2) {
@@ -161,7 +161,7 @@ export default class App extends Component {
         });
       } else {
         this.setState({
-          result: 'Please check 2 or more checklist!',
+          result: 'Please Input Value!',
         });
       }
     } else if (this.state.checked1 && this.state.checked2) {
@@ -211,7 +211,7 @@ export default class App extends Component {
         });
       } else {
         this.setState({
-          result: 'Please check 2 or more checklist!',
+          result: 'Please Input Value!',
         });
       }
     } else if (this.state.checked1 && this.state.checked2) {
@@ -271,6 +271,7 @@ export default class App extends Component {
           <View style={styles.wrapinput}>
             <TextInput
               keyboardType="numeric"
+              placeholder="Input Value Here"
               style={styles.textinput}
               name="num1"
               onChangeText={input => this.setState({input1: parseInt(input)})}
@@ -287,6 +288,7 @@ export default class App extends Component {
         <View style={styles.wrapcontent}>
           <View style={styles.wrapinput}>
             <TextInput
+              placeholder="Input Value Here"
               keyboardType="numeric"
               style={styles.textinput}
               name="num1"
@@ -304,6 +306,7 @@ export default class App extends Component {
         <View style={styles.wrapcontent}>
           <View style={styles.wrapinput}>
             <TextInput
+              placeholder="Input Value Here"
               keyboardType="numeric"
               style={styles.textinput}
               name="num1"
